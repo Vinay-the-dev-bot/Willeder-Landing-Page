@@ -2,7 +2,8 @@
 @import "./CSS/page1.scss";
 @import "./CSS/page3.scss";
 @import "./CSS/page2.scss";
-@import "./CSS/page4.scss";
+@import "./CSS/animation.scss";
+@import "./CSS/footer.scss";
 body{
     margin: 0;
 }
@@ -10,7 +11,7 @@ body{
 .App{
     font-family: Revalia; 
     text-align: center;
-    #background{
+    .background{
         position: absolute;
         background-color:#6A45FF;
         margin: 0 40%;
