@@ -1,0 +1,23 @@
+@import "./CSS/navbar.scss";
+@import "./CSS/page1.scss";
+@import "./CSS/page3.scss";
+@import "./CSS/page2.scss";
+@import "./CSS/page4.scss";
+body{
+    margin: 0;
+}
+
+.App{
+    font-family: Revalia; 
+    text-align: center;
+    #background{
+        position: absolute;
+        background-color:#6A45FF;
+        margin: 0 40%;
+        height: 1000%;
+        top: -50px; 
+        width: 20%;
+        z-index: -1;
+    }
+}
+ 
