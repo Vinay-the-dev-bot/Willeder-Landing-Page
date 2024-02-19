@@ -1,6 +1,7 @@
 function Page2() {
   return (
     <div id="page2">
+      <div className="background"></div>
       <h1>LOREM</h1>
       <p>subtitle</p>
       <div id="carousal">

@@ -32,20 +32,19 @@ function NavBar() {
     <>
       <nav id="navbar">
         <div id="logo">LOGO</div>
-
+        <div id="menu">
+          <ul id="nav">
+            <li>Home</li>
+            <li>Page 1</li>
+            <li>Page 2</li>
+          </ul>
+        </div>
         <div className={classList} onClick={toggleClass}>
           <div className="bar1"></div>
           <div className="bar2"></div>
           <div className="bar3"></div>
         </div>
       </nav>
-      <div id="menu">
-        <ul id="nav">
-          <li>Home</li>
-          <li>Page 1</li>
-          <li>Page 2</li>
-        </ul>
-      </div>
     </>
   );
 }
