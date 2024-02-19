@@ -1,3 +1,7 @@
+import facebook from "../Images/facebook.png";
+import twitter from "../Images/twitter.png";
+import Instagram from "../Images/instagram.png";
+import tiktok from "../Images/tik-tok.png";
 function Footer() {
   return (
     <div id="footer">
@@ -7,12 +11,14 @@ function Footer() {
         <p>Page 2</p>
       </div>
       <div id="socialMedia">
-        <p>FaceBook</p>
-        <p>Twitter</p>
-        <p>Instagram</p>
-        <p>Tik Tok</p>
+        <img src={facebook} alt="facebook" />
+        <img src={twitter} alt="Twitter" />
+        <img src={Instagram} alt="Instagram" />
+        <img src={tiktok} alt="TikTok" />
       </div>
-      <div id="copyright">Logo, Inc.</div>
+      <div id="copyright">
+        <span className="material-symbols-outlined">copyright</span>Logo, Inc.
+      </div>
     </div>
   );
 }
