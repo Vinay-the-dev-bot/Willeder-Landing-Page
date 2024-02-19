@@ -2,6 +2,7 @@ import "../Images/044cb65dd089cf0863aeb45d88915340.jpg";
 function Page1() {
   return (
     <div id="page1">
+      <div className="background"></div>
       <p id="para1">LOGO</p>
       <p id="para2">lorem ipsum dolor sit amet</p>
       <p id="para3">

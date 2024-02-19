@@ -1,10 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+// window.addEventListener("scroll", function () {
+//   if (window.scrollY >= 2750) {
+//     window.scrollTo(0, 2750);
+//     document.body.style.overflow = "hidden";
+//   } else {
+//     document.body.style.overflow = "";
+//   }
+// });
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />

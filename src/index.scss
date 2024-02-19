@@ -6,19 +6,31 @@
 @import "./CSS/footer.scss";
 body{
     margin: 0;
-}
+    // background-color: #6A45FF;
+    height: fit-content;
+    // overflow: hidden;
 
-.App{
-    font-family: Revalia; 
-    text-align: center;
-    .background{
-        position: absolute;
-        background-color:#6A45FF;
-        margin: 0 40%;
-        height: 1000%;
-        top: -50px; 
-        width: 20%;
-        z-index: -1;
-    }
+    #root {
+        height: 100%;
+            .App {
+                font-family: Revalia;
+                text-align: center;
+                height: 100%;
+    
+                .background {
+                    position: absolute;
+                    background-color: #6A45FF;
+                    margin: 0 40%;
+                    // height: 500%;
+                    height: 100%;
+                    // top: -50px;
+                    width: 20%;
+                    z-index: -10;
+    
+                    @media all and (max-width:768px) {
+                        opacity: .5;
+                    }
+                }
+            }
+        }
 }
- 

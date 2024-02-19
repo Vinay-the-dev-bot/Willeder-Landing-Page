@@ -1,6 +1,6 @@
 #navbar {
   width: 100%;
-  padding: 10px 0px;
+  padding: 10px 0;
   background-color: white;
   align-items: center;
   display: flex;
@@ -8,17 +8,68 @@
 #navbar #logo {
   width: 20%;
 }
-#navbar div {
+#navbar .container {
+  margin-right: 50px;
+  display: none;
+}
+@media all and (max-width: 768px) {
+  #navbar .container {
+    display: block;
+  }
+}
+#navbar .bar1,
+#navbar .bar2,
+#navbar .bar3 {
+  background-color: black;
+  width: 30px;
+  height: 2px;
+  margin: 6px 0px;
+  transition: 0.5s;
+}
+#navbar .change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+#navbar .change .bar2 {
+  opacity: 0;
+}
+#navbar .change .bar3 {
+  transform: rotate(45deg) translate(-5px, -3px);
+}
+@media all and (max-width: 768px) {
+  #navbar {
+    justify-content: space-between;
+  }
+}
+
+#menu {
   width: 80%;
 }
-#navbar div #nav {
+#menu #nav {
   display: flex;
   list-style: none;
   width: 60%;
   justify-content: center;
 }
-#navbar div #nav li {
+#menu #nav li {
   padding: 0 50px;
+}
+@media all and (max-width: 768px) {
+  #menu {
+    display: none;
+  }
+}
+
+#mobileMenu {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  background-color: white;
+}
+#mobileMenu #nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #page1 {
@@ -27,6 +78,10 @@
   width: 100%;
   height: 1080px;
   border: 1px;
+  color: white;
+}
+#page1 p {
+  font-family: Noto Sans;
 }
 #page1 #para1 {
   padding-top: 52%;
@@ -41,6 +96,11 @@
   letter-spacing: 0.48em;
   text-align: center;
 }
+@media all and (max-width: 768px) {
+  #page1 #para1 {
+    padding-top: 20%;
+  }
+}
 #page1 #para2 {
   width: 100%;
   background-color: #6A45FF;
@@ -50,13 +110,20 @@
   font-weight: 400;
   letter-spacing: 0.48em;
   padding: 0;
+  font-family: Noto Sans;
   font-size: 32px;
   font-weight: 600;
   line-height: 51px;
   letter-spacing: 0.3em;
   text-align: center;
 }
+@media all and (max-width: 768px) {
+  #page1 #para2 {
+    background-color: transparent;
+  }
+}
 #page1 #para3, #page1 #para4 {
+  font-family: Noto Sans;
   font-size: 12px;
   font-weight: 600;
   width: 70%;
@@ -71,10 +138,15 @@
 #page1 div {
   width: 2px;
   background-color: white;
-  height: 55px;
+  height: 35px;
   overflow: hidden;
   box-sizing: border-box;
   margin: auto;
+}
+@media all and (max-width: 768px) {
+  #page1 {
+    height: 600px;
+  }
 }
 
 #page3 {
@@ -90,7 +162,7 @@
 }
 #page3 #content {
   width: 25%;
-  padding-top: 200px;
+  padding-top: 15%;
   text-align: left;
   font-family: Noto Sans;
   font-size: 15px;
@@ -129,13 +201,21 @@
   position: relative;
   top: 30%;
 }
+@media all and (max-width: 768px) {
+  #page3 img {
+    height: 300px;
+  }
+}
 
 #page2 {
   width: 100%;
   height: 700px;
+  z-index: 1;
+  font-family: Noto Sans;
+  position: relative;
 }
 #page2 h1 {
-  margin-top: 150px;
+  padding-top: 75px;
 }
 #page2 #carousal {
   display: flex;
@@ -162,6 +242,12 @@
   width: 70%;
   font-size: 15px;
 }
+@media all and (max-width: 768px) {
+  #page2 #carousal #carousal1, #page2 #carousal #carousal2, #page2 #carousal #carousal3 {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
 #page2 #carousal #carousal1 {
   background-image: url("./Images/7746a488a1416d22e0b8b405b3300bf2.jpg");
   background-size: cover;
@@ -173,6 +259,19 @@
 #page2 #carousal #carousal3 {
   background-image: url("./Images/044cb65dd089cf0863aeb45d88915340.jpg");
   background-size: cover;
+}
+@media all and (max-width: 768px) {
+  #page2 #carousal {
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media all and (max-width: 768px) {
+  #page2 {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 
 #animation {
@@ -212,7 +311,8 @@
 }
 
 #footer {
-  height: 350px;
+  font-family: Noto Sans;
+  height: 300px;
   background-color: #5D6273;
   z-index: 1;
   position: relative;
@@ -225,28 +325,62 @@
   width: 60%;
   border-bottom: 2px solid white;
 }
+@media all and (max-width: 768px) {
+  #footer #redi {
+    flex-direction: column;
+  }
+}
 #footer #socialMedia {
   display: flex;
-  width: 50%;
+  width: 30%;
   padding: 30px 0;
   justify-content: space-around;
   margin: auto;
 }
+#footer #socialMedia img {
+  width: 48px;
+}
+@media all and (max-width: 768px) {
+  #footer #socialMedia {
+    width: 60%;
+  }
+}
+#footer #copyright {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+@media all and (max-width: 768px) {
+  #footer {
+    height: 400px;
+  }
+}
 
 body {
   margin: 0;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-
-.App {
+body #root {
+  height: 100%;
+}
+body #root .App {
   font-family: Revalia;
   text-align: center;
+  height: 100%;
 }
-.App .background {
+body #root .App .background {
   position: absolute;
   background-color: #6A45FF;
   margin: 0 40%;
-  height: 1000%;
-  top: -50px;
+  height: 100%;
   width: 20%;
-  z-index: -1;
+  z-index: -10;
+}
+@media all and (max-width: 768px) {
+  body #root .App .background {
+    opacity: 0.5;
+  }
 }/*# sourceMappingURL=index.css.map */
