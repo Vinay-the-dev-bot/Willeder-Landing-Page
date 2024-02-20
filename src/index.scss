@@ -20,15 +20,16 @@ body{
                 .background {
                     position: absolute;
                     background-color: #6A45FF;
-                    margin: 0 40%;
-                    // height: 500%;
-                    height: 100%;
-                    // top: -50px;
+                    margin: 0 40%; 
+                    height: 103%;
+                    top: -21px;
                     width: 20%;
                     z-index: -10;
     
                     @media all and (max-width:768px) {
                         opacity: .5;
+                        top: 0px;
+                        height: 105%;
                     }
                 }
             }

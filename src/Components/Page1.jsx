@@ -3,7 +3,19 @@ function Page1() {
   return (
     <div id="page1">
       <div className="background"></div>
-      <p id="para1">LOGO</p>
+      <p id="para1">
+        <div id="page1Logo">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <span>LOGO</span>
+      </p>
       <p id="para2">lorem ipsum dolor sit amet</p>
       <p id="para3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

@@ -50,7 +50,8 @@
         position: relative;
         top: 30%;
     @media all and (max-width:768px) {
-            height: 300px;
+        height: fit-content;
+            width: 50%;
         }
     }
 }

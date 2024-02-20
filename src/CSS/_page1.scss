@@ -12,7 +12,7 @@ background-image: url("./Images/7259f8ece71ae230e41c3a2c6709f5db.jpg");
     }
    #para1{
     padding-top: 52%;
-    width: 549.56px;
+    width: 60%;
     margin: auto; 
     height: 145.4px;
     color: white;
@@ -22,9 +22,60 @@ background-image: url("./Images/7259f8ece71ae230e41c3a2c6709f5db.jpg");
     line-height: 133px;
     letter-spacing: 0.48em;
     text-align: center;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    #page1Logo{
+        width: 700px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        
+        div{
+            width: 5px;
+            height: 70px;
+            position: absolute;
+            background-color: #6A45FF;
+            margin-bottom: 60px;
+        }
+        >div:nth-child(1){
+            transform: rotate(45deg);
+        }
+        >div:nth-child(2) {
+            transform: rotate(90deg);
+        }
+        >div:nth-child(3) {
+            transform: rotate(135deg);
+        }
+        >div:nth-child(4) {
+            transform: rotate(180deg);
+        }
+        >div:nth-child(5) {
+            transform: rotate(22.5deg);
+        }>div:nth-child(6) {
+            transform: rotate(67.5deg);
+        }>div:nth-child(7) {
+            transform: rotate(157.5deg);
+        }>div:nth-child(8   ) {
+            transform: rotate(112.5deg);
+        }
+    }
     @media all and (max-width:768px) {
             padding-top: 20%;
         }
+    span {
+        font-family: Revalia;
+        font-size: 78px;
+        font-weight: 400;
+        line-height: 133px;
+        letter-spacing: 0.48em;
+        text-align: center;
+        @media all and (max-width:768px) {
+            // padding-top: 20%;
+            letter-spacing: 0;
+                
+        }
+    }
    }
    #para2{ 
     width: 100%;
@@ -55,6 +106,10 @@ background-image: url("./Images/7259f8ece71ae230e41c3a2c6709f5db.jpg");
         line-height: 32px;
         letter-spacing: 0.3em;
         text-align: center;  
+    @media all and (max-width:768px) {
+        height: 600px;
+        width: 70%;
+    }
    }
    #para3{
     margin-top: 30px;
@@ -66,6 +121,7 @@ background-image: url("./Images/7259f8ece71ae230e41c3a2c6709f5db.jpg");
     overflow: hidden;
     box-sizing: border-box;
     margin: auto;
+    margin-bottom: 65px;
    }
 @media all and (max-width:768px) {
     height: 600px; 
